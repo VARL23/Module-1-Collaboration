@@ -1,0 +1,21 @@
+#Victor Rodriguez
+#SDEV220
+#This code takes the name of a student and their GPA and allows me to check if they made the dean's list or the honor roll.
+
+def main():
+    while True:
+        last_name = (input("What is the student's last name? "))
+        if last_name == 'ZZZ':
+            print("Program finished")
+            break
+        first_name = (input("What is the student's first name?"))
+        GPA_input = input("What is the student's GPA? ")
+        GPA = float(GPA_input)
+        if GPA >= 3.5:
+            print("Student", first_name, last_name, "has made the Dean's list.")
+        elif GPA >= 3.25:
+            print("Student", first_name, last_name, "has made the Honor Roll.")
+        else:
+            print("this student did not make the honor roll or the dean's list.")
+
+main()
